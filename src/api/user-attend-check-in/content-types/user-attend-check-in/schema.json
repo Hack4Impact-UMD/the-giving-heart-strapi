@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "user_attend_check_ins",
+  "info": {
+    "singularName": "user-attend-check-in",
+    "pluralName": "user-attend-check-ins",
+    "displayName": "UserAttendCheckIn"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "user_attend": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::user-attend.user-attend"
+    },
+    "CheckIn": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    }
+  }
+}

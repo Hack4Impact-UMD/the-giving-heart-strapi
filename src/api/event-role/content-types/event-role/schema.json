@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_roles",
+  "info": {
+    "singularName": "event-role",
+    "pluralName": "event-roles",
+    "displayName": "EventRole",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "event": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::event.event",
+      "inversedBy": "event_roles"
+    },
+    "volunteer_role": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::volunteer-role.volunteer-role",
+      "inversedBy": "event_roles"
+    },
+    "Capacity": {
+      "type": "integer",
+      "required": true,
+      "min": 0
+    },
+    "user_attends": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-attend.user-attend",
+      "mappedBy": "event_role"
+    }
+  }
+}

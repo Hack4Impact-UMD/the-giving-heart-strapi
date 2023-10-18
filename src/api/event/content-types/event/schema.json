@@ -30,6 +30,18 @@
     "signUpEndDate": {
       "type": "date",
       "required": true
+    },
+    "user_attends": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::user-attend.user-attend",
+      "mappedBy": "event"
+    },
+    "event_roles": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event-role.event-role",
+      "mappedBy": "event"
     }
   }
 }
