@@ -1,0 +1,26 @@
+{
+  "kind": "collectionType",
+  "collectionName": "volunteer_roles",
+  "info": {
+    "singularName": "volunteer-role",
+    "pluralName": "volunteer-roles",
+    "displayName": "VolunteerRole",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "active": {
+      "type": "boolean",
+      "default": true
+    }
+  }
+}
