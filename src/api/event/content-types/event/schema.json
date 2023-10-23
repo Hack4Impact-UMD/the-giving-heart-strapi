@@ -4,7 +4,8 @@
   "info": {
     "singularName": "event",
     "pluralName": "events",
-    "displayName": "Event"
+    "displayName": "Event",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -42,6 +43,15 @@
       "relation": "oneToMany",
       "target": "api::event-role.event-role",
       "mappedBy": "event"
+    },
+    "eventTimeStart": {
+      "type": "time"
+    },
+    "eventTimeEnd": {
+      "type": "time"
+    },
+    "location": {
+      "type": "string"
     }
   }
 }
