@@ -12,23 +12,16 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "event": {
-      "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::event.event",
-      "inversedBy": "user_attends"
-    },
     "users_permissions_user": {
       "type": "relation",
       "relation": "manyToOne",
       "target": "plugin::users-permissions.user",
       "inversedBy": "user_attends"
     },
-    "event_role": {
+    "event_role_shifts": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::event-role.event-role",
-      "inversedBy": "user_attends"
+      "relation": "oneToMany",
+      "target": "api::event-role-shift.event-role-shift"
     }
   }
 }

@@ -4,22 +4,23 @@
   "info": {
     "singularName": "user-attend-check-out",
     "pluralName": "user-attend-check-outs",
-    "displayName": "UserAttendCheckOut"
+    "displayName": "UserAttendCheckOut",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "checkOut": {
+      "type": "boolean",
+      "default": false,
+      "required": true
+    },
     "user_attend": {
       "type": "relation",
       "relation": "oneToOne",
       "target": "api::user-attend.user-attend"
-    },
-    "CheckOut": {
-      "type": "boolean",
-      "default": false,
-      "required": true
     }
   }
 }

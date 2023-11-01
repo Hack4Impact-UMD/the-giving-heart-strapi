@@ -20,7 +20,7 @@
       "type": "richtext",
       "required": true
     },
-    "eventDate": {
+    "eventDateStart": {
       "type": "date",
       "required": true
     },
@@ -32,26 +32,18 @@
       "type": "date",
       "required": true
     },
-    "user_attends": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::user-attend.user-attend",
-      "mappedBy": "event"
-    },
-    "event_roles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::event-role.event-role",
-      "mappedBy": "event"
-    },
-    "eventTimeStart": {
-      "type": "time"
-    },
-    "eventTimeEnd": {
-      "type": "time"
-    },
     "location": {
-      "type": "string"
+      "type": "string",
+      "required": true
+    },
+    "eventCheckInKey": {
+      "type": "string",
+      "minLength": 4,
+      "required": true
+    },
+    "eventDateEnd": {
+      "type": "date",
+      "required": true
     }
   }
 }

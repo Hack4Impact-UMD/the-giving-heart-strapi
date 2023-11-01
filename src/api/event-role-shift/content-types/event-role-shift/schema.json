@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "event_role_shifts",
+  "info": {
+    "singularName": "event-role-shift",
+    "pluralName": "event-role-shifts",
+    "displayName": "EventRoleShift",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "eventRoleShiftTimeStart": {
+      "type": "time"
+    },
+    "eventRoleShiftTimeEnd": {
+      "type": "time"
+    },
+    "eventRoleShiftDate": {
+      "type": "date"
+    },
+    "volunteer_role": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::volunteer-role.volunteer-role"
+    },
+    "event": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::event.event"
+    },
+    "capacity": {
+      "type": "integer"
+    },
+    "eventRoleShiftDescription": {
+      "type": "string"
+    }
+  }
+}

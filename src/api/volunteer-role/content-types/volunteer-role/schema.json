@@ -21,12 +21,6 @@
     "active": {
       "type": "boolean",
       "default": true
-    },
-    "event_roles": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::event-role.event-role",
-      "mappedBy": "volunteer_role"
     }
   }
 }
