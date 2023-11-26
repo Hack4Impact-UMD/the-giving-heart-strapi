@@ -22,6 +22,12 @@
       "type": "relation",
       "relation": "oneToMany",
       "target": "api::event-role-shift.event-role-shift"
+    },
+    "checkIn": {
+      "type": "boolean"
+    },
+    "checkOut": {
+      "type": "boolean"
     }
   }
 }
