@@ -20,7 +20,14 @@ yarn start
 
 Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
 
-### Environment Variables
+```
+yarn build
+```
+## 📚 Learn more
+- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
+- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
+
+## Environment Variables
 ```
 HOST=0.0.0.0
 PORT=1337
@@ -46,12 +53,3 @@ DATABASE_SHEMA=public
 DATABASE_POOL_MIN=1
 DATABASE_POOL_MAX=100%
 ```
-
-```
-yarn build
-```
-## 📚 Learn more
-- [Strapi documentation](https://docs.strapi.io) - Official Strapi documentation.
-- [Strapi tutorials](https://strapi.io/tutorials) - List of tutorials made by the core team and the community.
-
-
