@@ -20,6 +20,33 @@ yarn start
 
 Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)
 
+### Environment Variables
+```
+HOST=0.0.0.0
+PORT=1337
+
+APP_KEYS=""
+API_TOKEN_SALT=""
+ADMIN_JWT_SECRET=""
+TRANSFER_TOKEN_SALT=""
+
+JWT_SECRET=""
+
+# Supabase Provider
+SUPABASE_URL=""
+SUPABASE_API_URL=""
+SUPABASE_API_KEY=""
+SUPABASE_BUCKET=files
+SUPABASE_DIRECTORY=files
+
+# Supabase Database
+DATABASE_CLIENT=postgres
+DATABASE_URL=""
+DATABASE_SHEMA=public
+DATABASE_POOL_MIN=1
+DATABASE_POOL_MAX=100%
+```
+
 ```
 yarn build
 ```
