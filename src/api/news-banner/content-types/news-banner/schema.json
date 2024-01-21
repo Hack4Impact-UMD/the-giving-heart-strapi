@@ -1,0 +1,18 @@
+{
+  "kind": "singleType",
+  "collectionName": "news_banners",
+  "info": {
+    "singularName": "news-banner",
+    "pluralName": "news-banners",
+    "displayName": "NewsBanner"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "text": {
+      "type": "richtext"
+    }
+  }
+}

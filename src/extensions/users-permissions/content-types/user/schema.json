@@ -76,6 +76,12 @@
     },
     "lastName": {
       "type": "string"
+    },
+    "waitlist_user_attends": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::waitlist-user-attend.waitlist-user-attend",
+      "mappedBy": "users_permissions_user"
     }
   }
 }
