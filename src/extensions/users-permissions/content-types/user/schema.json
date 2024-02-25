@@ -19,6 +19,11 @@
       "configurable": false,
       "required": true
     },
+    "phoneNumber": {
+      "type": "string",
+      "minLength": 10,
+      "required": true
+    },    
     "email": {
       "type": "email",
       "minLength": 6,
