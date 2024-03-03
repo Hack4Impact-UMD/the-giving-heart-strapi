@@ -1,0 +1,65 @@
+{
+  "kind": "singleType",
+  "collectionName": "about_us_pages",
+  "info": {
+    "singularName": "about-us-page",
+    "pluralName": "about-us-pages",
+    "displayName": "AboutUsPage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "subtitle_1": {
+      "type": "string"
+    },
+    "description_1": {
+      "type": "text"
+    },
+    "subtitle_2": {
+      "type": "string"
+    },
+    "subtitle_3": {
+      "type": "string"
+    },
+    "timeline_textfield_1": {
+      "type": "text"
+    },
+    "timeline_textfield_2": {
+      "type": "text"
+    },
+    "timeline_textfield_3": {
+      "type": "text"
+    },
+    "banner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "ways_we_help_others_pictures": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "ways_we_help_others_caption_1": {
+      "type": "string"
+    },
+    "ways_we_help_others_caption_2": {
+      "type": "string"
+    },
+    "ways_we_help_others_caption_3": {
+      "type": "string"
+    }
+  }
+}
