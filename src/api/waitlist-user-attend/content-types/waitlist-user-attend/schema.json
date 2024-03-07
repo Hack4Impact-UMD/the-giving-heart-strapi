@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "waitlist_user_attends",
+  "info": {
+    "singularName": "waitlist-user-attend",
+    "pluralName": "waitlist-user-attends",
+    "displayName": "WaitlistUserAttend",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "users_permissions_user": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "waitlist_user_attends"
+    },
+    "checkIn": {
+      "type": "boolean"
+    },
+    "checkOut": {
+      "type": "boolean"
+    },
+    "event_role_shifts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::event-role-shift.event-role-shift"
+    }
+  }
+}
