@@ -28,6 +28,12 @@
     },
     "checkOut": {
       "type": "boolean"
+    },
+    "checkInTime": {
+      "type": "time"
+    },
+    "checkOutTime": {
+      "type": "time"
     }
   }
 }
