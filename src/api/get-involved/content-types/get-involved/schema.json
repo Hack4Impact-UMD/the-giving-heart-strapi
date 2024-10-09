@@ -25,9 +25,6 @@
         "videos",
         "audios"
       ]
-    },
-    "Donate": {
-      "type": "string"
     }
   }
 }

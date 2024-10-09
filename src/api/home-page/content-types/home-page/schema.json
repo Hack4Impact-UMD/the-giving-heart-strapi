@@ -28,6 +28,9 @@
     },
     "footer_phone_number": {
       "type": "string"
+    },
+    "footer_hours": {
+      "type": "string"
     }
   }
 }
