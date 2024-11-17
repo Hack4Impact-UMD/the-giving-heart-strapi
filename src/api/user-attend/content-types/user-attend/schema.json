@@ -34,6 +34,9 @@
     },
     "checkOutTime": {
       "type": "time"
+    },
+    "notes": {
+      "type": "text"
     }
   }
 }
